@@ -1,8 +1,8 @@
 class Qor < Formula
   desc "Cli v2 (using Go)"
   homepage "https://github.com/Qordobacode/Cli-v2"
-  url "https://github.com/Qordobacode/Cli-v2/archive/version-0.4.1.tar.gz"
-  sha256 "e8ea9d042014211e2cb9b31a493eacaa54a15bc237bd47d3781843e55a6d7577"
+  url "https://github.com/Qordobacode/Cli-v2/archive/version-0.4.2.tar.gz"
+  sha256 "2e14826a13d4e5a1d4b0e149d262067fd32b1f3241570004deb59f07d489dd98"
   head "https://github.com/Qordobacode/Cli-v2.git"
 
   depends_on "go" => :build
@@ -14,7 +14,7 @@ class Qor < Formula
     ldflags = %W[
         -s -w
         -X github.com/CircleCI-Public/circleci-cli/cmd.PackageManager=homebrew
-        -X github.com/Qordobacode/Cli-v2/version.Version=0.4.1.
+        -X github.com/Qordobacode/Cli-v2/version.Version=0.4.2
     ]
     src.cd do
       system "go", "build", "-ldflags", ldflags.join(" "), "-o", "#{bin}/qor"
