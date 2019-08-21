@@ -17,7 +17,7 @@ class Qor < Formula
         -X github.com/Qordobacode/Cli-v2/version.Version=0.7.0
     ]
     src.cd do
-      system "go", "build", "-mod", "vendor", "-ldflags", ldflags.join(" "), "-o", "#{bin}/qor"
+      system "go", "build", "-ldflags", ldflags.join(" "), "-o", "#{bin}/qor"
       prefix.install_metafiles
     end
   end

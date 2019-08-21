@@ -2,20 +2,19 @@
 
 1. Install homebrew tap 
    ```
-   brew tap solorad/qor
+   brew tap qordobacode/qor
    ```
 2. Install qor app   
    ```
-   brew install solorad/qor/qor
+   brew install qordobacode/qor/qor
    ```
 3. Install qor app locally:   
    ```
-   brew create 'https://github.com/Qordobacode/Cli-v2/archive/version-0.3.tar.gz' qor
+   brew create 'https://github.com/Qordobacode/Cli-v2/archive/version-0.7.tar.gz' qor
    ```
 4. Audit formula   
     ```bash
-    brew audit --strict cli-v2
-    ```
+    brew audit --strict qor
 5. Install from source     
    ```bash
     sudo chmod 644 /home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/qor.rb
