@@ -10,7 +10,7 @@
    ```
 3. Install qor app locally:   
    ```
-   brew create 'https://github.com/Qordobacode/Cli-v2/archive/version-0.7.tar.gz' qor
+   brew create 'https://github.com/Qordobacode/Cli-v2/archive/version-0.7.1.tar.gz' qor
    ```
 4. Audit formula   
     ```bash
